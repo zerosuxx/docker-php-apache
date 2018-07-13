@@ -11,7 +11,7 @@ RUN apt-get update \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* \
     && docker-php-ext-configure intl \
-    && docker-php-ext-install soap zip intl gettext mysqli pdo_mysql gd exif opcache \
+    && docker-php-ext-install soap zip intl gettext mysqli pdo_mysql opcache \
     && docker-php-ext-enable opcache
 
 # Config
